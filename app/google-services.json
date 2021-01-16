@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "971746465013",
+    "project_id": "rentradar-95578",
+    "storage_bucket": "rentradar-95578.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971746465013:android:cc9cd74b67aa466fe221bc",
+        "android_client_info": {
+          "package_name": "com.example.rentradar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971746465013-9l2i1ccp40j1m11utk2067mmta098pdh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rentradar",
+            "certificate_hash": "84cefcfc13347b5a11d34d6b701e5260820372cd"
+          }
+        },
+        {
+          "client_id": "971746465013-e2dh8v8b6djmb27aap6nccs0okaig06r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSUQn9jbEHRarIrWTNojWQ2ttSU4cq4FQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971746465013-e2dh8v8b6djmb27aap6nccs0okaig06r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

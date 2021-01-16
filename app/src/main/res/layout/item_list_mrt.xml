@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-5dp"
+        app:strokeWidth="5dp"
+        app:strokeColor="@color/mrt_zhonghe_xinlu_line"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="西門站"
+        android:backgroundTint="@color/mrt_choosed"
+        android:padding="10dp"
+        app:cornerRadius="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvLink"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="-10dp"
+        android:background="@color/mrt_zhonghe_xinlu_line"/>
+
+
+</LinearLayout>

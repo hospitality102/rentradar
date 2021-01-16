@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="area_selected_28sp">28sp</dimen>
+    <dimen name="area_20sp">20sp</dimen>
+
+</resources>

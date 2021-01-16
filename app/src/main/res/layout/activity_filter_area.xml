@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".FilterAreaActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:menu="@menu/top_app_bar_filter_by"
+                app:navigationIcon="@drawable/ic_back_white_24dp"
+                app:title="區域搜尋"
+                app:titleTextAppearance="@style/MyTopBarTitleStyle"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRegion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:listDivider"
+        android:backgroundTint="@color/blue_800"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvErrorInfo"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textSize="32sp"/>
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/numberPick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:np_width="64dp"
+                app:np_height="180dp"
+                app:np_dividerColor="@color/list_line"
+                app:np_dividerDistance="40dp"
+                app:np_wheelItemCount="5"
+                app:np_selectedTextColor="@color/orange_500"
+                app:np_selectedTextSize="@dimen/area_selected_28sp"
+                app:np_textSize="@dimen/area_20sp"
+                app:np_typeface="sans-serif-light"
+                app:np_wrapSelectorWheel="false"
+                android:theme="@style/NumberPickerText"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:menu="@menu/top_app_bar_favorite"
+                app:title="我的收藏"
+                app:titleTextAppearance="@style/MyTopBarTitleStyle"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tlFavoriteSort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabIndicatorHeight="4dp"
+            app:tabTextAppearance="@style/MyTabLayoutTextStyle">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiFavorateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新日期 ▾" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiFavoritePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租金高低 ▾" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiFavoritePing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="坪數大小 ▾" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

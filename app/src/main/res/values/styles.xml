@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="iconPadding">0dp</item>
+    <item name="android:insetTop">0dp</item>
+    <item name="android:insetBottom">0dp</item>
+    <item name="android:paddingLeft">12dp</item>
+    <item name="android:paddingRight">12dp</item>
+    <item name="android:minWidth">48dp</item>
+    <item name="android:minHeight">48dp</item>
+</style>
+
+<!--頂部標題列樣式-->
+    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/blue_600</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <!--複選按鈕設置-->
+    <style name="MyOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@drawable/selector_my_btn_text</item>
+    </style>
+
+<!-- TabLayout文字樣式設定-->
+    <style name="MyTabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- InputHint樣式設定-->
+    <style name="MyInputHintStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- TopBarTitle樣式設定-->
+    <style name="MyTopBarTitleStyle">
+        <item name="android:textSize">23sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+    <!--全屏Dialog-->
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+
+
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimaryVariant">@color/blue_800</item>
+        <item name="colorOnPrimary">@color/blue_600</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange_500</item>
+        <item name="colorSecondaryVariant">@color/orange_500</item>
+        <item name="colorOnSecondary">@color/orange_500</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+     <!-- 狀態欄及導航欄透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+       <!--ui元件設置-->
+        <item name="toolbarStyle">@style/MyToolbar</item>
+        <item name="buttonStyle">@style/MyOutlineButton</item>
+        <!--轉場動畫-->
+        <item name="android:windowEnterTransition">@transition/activity_slide</item>
+        <item name="android:windowExitTransition">@transition/activity_slide</item>
+        <!--啓用窗口內容轉換-->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- 啓用Transition框架,但沒有默認的動畫, 需要通過bundle設定動畫，設定false則從ContentTransition中關閉此效果-->
+        <item name="android:windowActivityTransitions">true</item>
+        <!--是否允許動畫重疊-->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
+    </style>
+
+</resources>

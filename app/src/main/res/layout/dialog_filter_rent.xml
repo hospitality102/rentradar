@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvRentRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_600"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:ems="8"
+        android:textSize="28sp"/>
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numberPick"
+        android:theme="@style/NumberPickerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:np_width="64dp"
+        app:np_height="180dp"
+        app:np_dividerColor="@color/list_line"
+        app:np_dividerDistance="50dp"
+        app:np_wheelItemCount="5"
+        app:np_selectedTextColor="@color/orange_500"
+        app:np_selectedTextSize="@dimen/area_selected_28sp"
+        app:np_textSize="@dimen/area_20sp"
+        app:np_typeface="sans-serif-light"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/common_confirm"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/common_cancel"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
